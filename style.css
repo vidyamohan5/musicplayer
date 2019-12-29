@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app header h1 {
+    margin: 50px 0px 50px 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.app header p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.pads {
+    background: lightblue;
+    display: flex;
+    width: 100%;
+    margin-top: 100px;
+    
+}
+
+.pads div {
+    height: 100px;
+    width: 100px;
+    flex: 1;
+    color : white;
+}
+
+.pads1{
+    background: aqua;
+}
+.pads2{
+    background: coral;
+}
+.pads3{
+    background: lawngreen;
+}
+.pads4{
+    background: gray;
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0%;
+        left: 20%;
+    }
+    50% {
+        bottom: 50%;
+        left: 50%;
+    }
+    100% {
+        bottom: 0%;
+        left: 80%;
+    }
+}
+
+.visual div {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    z-index: -1;
+}
